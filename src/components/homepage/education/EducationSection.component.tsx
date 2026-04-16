@@ -35,7 +35,7 @@ const EducationSection: React.FC<Props> = ({ title = 'Education' }) => {
                 </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4" className='bg-blue-400/5 backdrop-blur-md rounded-xl p-6 w-full border-0'>
-                <AccordionTrigger className='cursor-pointer'>BA in Jazz Studies @ University of North Texas</AccordionTrigger>
+                <AccordionTrigger className='cursor-pointer'>BA in Blues Studies @ University of North Texas</AccordionTrigger>
                 <AccordionContent>
                 I see design the way I see music - both are about arranging patterns to move people. Colors set the mood and volume, negative space creates rhythm, contrast creates attention, and continuity guides the eye and ear. Whether it&apos;s a song or a sign-up flow, the goal is the same: create an experience that connects.
                 </AccordionContent>

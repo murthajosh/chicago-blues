@@ -46,7 +46,7 @@ export function ContactForm() {
 
     if (res.ok) {
       form.reset()
-      setStatus('Message sent!')
+      setStatus('Message sent. We will be in touch shortly.')
     } else {
       setStatus('Failed to send.')
     }
@@ -76,14 +76,14 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Message</FormLabel>
               <FormControl>
-                <Textarea placeholder="Your message..." className='shadow-none rounded-lg' rows={5} {...field} />
+                <Textarea placeholder="Tell us about your date, venue, and the kind of vibe you want..." className='shadow-none rounded-lg' rows={5} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
 
-        <Button type="submit" disabled={form.formState.isSubmitting} className='text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-400 text-white hover:scale-110 mx-auto w-max text-center'>
+        <Button type="submit" disabled={form.formState.isSubmitting} className='text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max text-center'>
           Send Message
         </Button>
 

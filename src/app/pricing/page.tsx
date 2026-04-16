@@ -12,11 +12,10 @@ export default function Pricing() {
                 <li>$200 per performer / hour on-site</li>
                 <li>+$2 per performer / mile outside Cook County</li>
             </ul>
-            <p>No packages. No hidden fees. Just great jazz musicians at a clear hourly rate. 
-            </p>
+            <p>Simple math, clear expectations, and no surprise add-ons.</p>
         <Link
             href='/'
-            className='text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-400 text-white hover:scale-110 mx-auto w-max text-center'>
+            className='text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max text-center'>
             Get Your Quote Today
         </Link>
         </section>
@@ -26,46 +25,46 @@ export default function Pricing() {
 
             <div>
                 <h3 className="font-bold">1. Choose your band.</h3>
-                <p>Build the custom jazz band for your event space and atmosphere, from solo guitar or piano all the way to an eight-piece swing band!</p>
+                <p>Pick the lineup that fits your room and energy, from stripped-down duo to full blues ensemble.</p>
             </div>
 
             <div>
                 <h3 className="font-bold">2. Choose your time.</h3>
-                <p>We bill based on hours on-site (explained below)</p>
+                <p>We bill the total on-site window you need the band ready and available.</p>
             </div>
             <div>
                 <h3 className="font-bold">3. Add travel (if applicable)</h3>
-                <p>Only applies outside Cook County</p>
+                <p>Mileage only applies outside Cook County.</p>
             </div>
         </section>
 
         <section className="bg-slate-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col justify-start gap-8 mx-auto w-full max-w-4xl">
             <h2 className="font-bold text-2xl">Real Pricing Examples</h2>
 
-            <div className="border-l-2 border-amber-400 ps-3">
+            <div className="border-l-2 border-amber-700 ps-3">
                 <h3 className="font-bold">Example 1: Wedding Cocktail Hour</h3>
                 <ul className="ps-3 py-3">
-                    <li>Jazz Trio (3 musicians x $200 = $600)</li>
+                    <li>Blues Trio (3 musicians x $200 = $600)</li>
                     <li>2 hours</li>
                     <li>Inside Cook County</li>
                 </ul>
                 <p className="font-bold">Total: $1,200</p>
             </div>
 
-            <div className="border-l-2 border-amber-400 ps-3">
+            <div className="border-l-2 border-amber-700 ps-3">
                 <h3 className="font-bold">Example 2: Corporate Fundraiser</h3>
                 <ul className="ps-3 py-3">
-                    <li>Jazz Quartet (4 musicians x $200 = $800)</li>
+                    <li>Blues Quartet (4 musicians x $200 = $800)</li>
                     <li>3 hours</li>
                     <li>Inside Cook County</li>
                 </ul>
                 <p className="font-bold">Total: $2,400</p>
             </div>
 
-            <div className="border-l-2 border-amber-400 ps-3">
+            <div className="border-l-2 border-amber-700 ps-3">
                 <h3 className="font-bold">Example 3: Classic Wedding Reception</h3>
                 <ul className="ps-3 py-3">
-                    <li>Jazz Quintet (5 musicians x $200 = $1,000)</li>
+                    <li>Blues Quintet (5 musicians x $200 = $1,000)</li>
                     <li>4 hours</li>
                     <li>20 miles outside Cook County (20 miles x $2 x 5 musicians = $200)</li>
                 </ul>
@@ -79,7 +78,7 @@ export default function Pricing() {
             <div className="border-l-2 border-green-400 ps-3">
                 <h3 className="font-bold">Included with every booking:</h3>
                 <ul className="ps-3 py-3 list-disc">
-                    <li>Professional Chicago Jazz musicians who look great and sound even better!</li>
+                    <li>Professional Chicago blues musicians who look great and sound even better.</li>
                     <li>Total flexibility to customize the band.</li>
                     <li>Free PA system available for announcements and speeches.</li>
                 </ul>
@@ -100,7 +99,7 @@ export default function Pricing() {
             <h2 className="font-bold text-2xl">What &quot;Hours On-Site&quot; means</h2>
 
             <div className="flex flex-col gap-3">
-                <p>Unlike large wedding bands with complex production, jazz ensembles are lightweight and flexible.</p>
+                <p>Unlike large wedding bands with complex production, blues ensembles are lightweight and flexible.</p>
                 <p>We typically arrive shortly before playing and leave right after - so you’re only paying for the time you actually need music.</p>
                 <p>If you’d like us set up early (for example, before guests arrive or during dinner transitions), we simply include that time in the hourly total so musicians are compensated fairly.</p>
             </div>
@@ -113,59 +112,59 @@ export default function Pricing() {
                 <div className="bg-white p-3 rounded">
                     <h3 className="font-bold">Intimate Duo</h3>
                     <ul className="ps-3 py-3 list-disc">
-                        <li>Jazz Vocalist + Guitar</li>
-                        <li>Great for engagement parties & rehearsal dinners</li>
-                        <li>A subtle backdrop to dinner conversation</li>
+                        <li>Blues Vocalist + Guitar</li>
+                    <li>Great for rehearsal dinners and private celebrations</li>
+                    <li>Warm texture without overpowering conversation</li>
                         <li>Starting as low as $400</li>
                     </ul>
                     <Link
                         href='/'
-                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-400 text-white hover:scale-110 mx-auto w-max`}
+                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max`}
                     >
                         Build this band
                     </Link>
                 </div>
                 <div className="bg-white p-3 rounded">
-                    <h3 className="font-bold">Classic Jazz Trio</h3>
+                    <h3 className="font-bold">Classic Blues Trio</h3>
                     <ul className="ps-3 py-3 list-disc">
-                        <li>Piano + Bass + Drums</li>
-                        <li>Perfect for cocktail hours and networking events</li>
-                        <li>A soundtrack for socializing</li>
+                        <li>Guitar + Bass + Drums</li>
+                        <li>Ideal for cocktail hours and networking receptions</li>
+                        <li>Steady groove with room-friendly volume</li>
                         <li>Starting as low as $600</li>
                     </ul>
                     <Link
                         href='/'
-                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-400 text-white hover:scale-110 mx-auto w-max`}
+                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max`}
                     >
                         Build this band
                     </Link>
                 </div>
                 <div className="bg-white p-3 rounded">
-                    <h3 className="font-bold">Swingin&apos; Sax Quartet</h3>
+                    <h3 className="font-bold">Electric Blues Quartet</h3>
                     <ul className="ps-3 py-3 list-disc">
-                        <li>Saxophone + Piano + Bass + Drums</li>
-                        <li>Fuller sound, still elegant and unobtrusive</li>
-                        <li>A bit more than background</li>
+                        <li>Electric Guitar + Keys + Bass + Drums</li>
+                        <li>Fuller sound with a roots-forward feel</li>
+                        <li>Great when you want music to lead the room</li>
                         <li>Starting as low as $800</li>
                     </ul>
                     <Link
                         href='/'
-                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-400 text-white hover:scale-110 mx-auto w-max`}
+                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max`}
                     >
                         Build this band
                     </Link>
                 </div>
                 <div className="bg-white p-3 rounded">
-                    <h3 className="font-bold">Upscale Reception Quintet</h3>
+                    <h3 className="font-bold">Chicago Blues Quintet</h3>
                     <ul className="ps-3 py-3 list-disc">
-                        <li>Trumpet + Sax + Piano + Bass + Drums</li>
-                        <li>Powerful and lively</li>
-                        <li>Delightfully danceable</li>
+                        <li>Vocal + Guitar + Keys + Bass + Drums</li>
+                        <li>Powerful, soulful, and dance-friendly</li>
+                        <li>Best for high-energy receptions and parties</li>
                         <li>Starting as low as $1000</li>
                     </ul>
                     <Link
                         href='/'
-                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-400 text-white hover:scale-110 mx-auto w-max`}
+                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max`}
                     >
                         Build this band
                     </Link>

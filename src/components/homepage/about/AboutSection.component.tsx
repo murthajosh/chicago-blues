@@ -13,27 +13,27 @@ interface AboutRow {
 
 const aboutRows: AboutRow[] = [  {
     heading: 'Corporate events',
-    body: "Your company party shouldn't feel like just another workday. With years of experience performing in corporate settings, Chicago Jazz Assembly performers know how to read the room and set the perfect vibe, from relaxed cocktail hours to upbeat networking sessions.",
-    imgUrl: '/assets/img/corporate.webp',
+    body: "From networking mixers to office holiday galas, we shape the set around your event. Expect polished players, quick communication, and music that sets the perfect mood.",
+    imgUrl: '/assets/img/singer.webp',
   },
   {
     heading: 'Weddings',
-    body: "Bring your wedding to life with music as special as the day itself. From the aisle to the afterparty, Chicago Jazz Assembly ensembles specialize in crafting the perfect soundtrack to romance and celebration.",
-    imgUrl: '/assets/img/wedding.webp',
+    body: "Your wedding music should feel personal, not generic. We build custom blues-forward ensembles for ceremonies, cocktail hour, dinner, and dance sets with smooth transitions all night.",
+    imgUrl: '/assets/img/trumpeter.webp',
   },
   {
     heading: 'Private parties',
-    body: "Set the tone for an unforgettable event. With years of experience at private celebrations, Chicago Jazz Assembly bands create a vibrant, feel-good atmosphere, whether you’re going for laid-back elegance or lively fun!",
-    imgUrl: '/assets/img/party.webp',
+    body: "Birthday, anniversary, house concert, or backyard blowout, we match the energy you want. Keep it low-key and intimate or turn it up with a full rhythm section.",
+    imgUrl: '/assets/img/saxophonist.webp',
   }
 ];
 
-const AboutSection: React.FC<Props> = ({ title = 'Elevate your gathering.' }) => {
+const AboutSection: React.FC<Props> = ({ title = 'Chicago events, built your way.' }) => {
   return (
     <section id="caseStudies" className="flex flex-col gap-16 w-full max-w-4xl mx-auto">
       <div className="sm: text-center sm:max-w-md sm:mx-auto">
         <h2 className="text-2xl font-black">{title}</h2>
-        <p className="">Take the headache out of booking the perfect live Jazz band for your next Chicago event. Custom build your lineup - from solo piano all the way to a swingin horn band - and get a quote fast! Transparent pricing. Quality 100% guaranteed.   </p>
+        <p className="">No package traps and no mystery pricing. Choose your instrumentation, share your timeline, and get a fast quote from working Chicago musicians who know how to read a room.</p>
       </div>
 
       <div className="flex flex-col gap-16 w-full">
@@ -43,7 +43,7 @@ const AboutSection: React.FC<Props> = ({ title = 'Elevate your gathering.' }) =>
             className={`${styles.aboutRow} grid grid-cols-1 gap-6 items-center sm:grid-cols-2`}
           >
             <div
-              className={`text flex flex-col justify-center border-l-2 border-amber-400 ps-3 ${
+              className={`text flex flex-col justify-center border-l-2 border-amber-700 ps-3 ${
                 i % 2 === 1 ? "sm:order-2" : ""
               }`}
             >

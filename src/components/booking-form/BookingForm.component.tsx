@@ -32,10 +32,8 @@ const instrumentsList = [
   'guitar',
   'bass',
   'drums',
-  'vocalist',
   'saxophone',
   'trumpet',
-  'trombone',
 ]
 
 const bookingSchema = z.object({
@@ -120,7 +118,7 @@ export function BookingForm() {
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold transition 
                       ${isActive ? 'bg-slate-900 text-white' : ''}
-                      ${isComplete ? 'bg-slate-900 text-amber-400' : ''}
+                      ${isComplete ? 'bg-slate-900 text-amber-700' : ''}
                       ${!isActive && !isComplete ? 'bg-muted' : ''}`}
                   >
                     {isComplete ? '✓' : s.id}

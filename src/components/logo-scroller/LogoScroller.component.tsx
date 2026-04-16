@@ -20,7 +20,7 @@ export default function LogoScroller() {
     <section id="caseStudies" className="flex flex-col gap-16 w-full max-w-4xl mx-auto">
       <div className="">
         <h2 className="text-2xl font-black">Catch us around town!</h2>
-        <p className="">You may have already seen CJA musicians playing at some of Chicago&apos;s finest event venues!</p>
+        <p className="">You may have already seen CBA musicians playing at some of Chicago&apos;s finest Blues venues!</p>
       </div>
       <div className="w-full overflow-hidden">
         <div className="flex w-max animate-scroll">

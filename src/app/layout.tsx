@@ -15,10 +15,10 @@ const figtree = Figtree({
 })
 
 export const metadata: Metadata = {
-  title: "Chicago Jazz Assembly | The perfect band ",
-  description: "Hire a custom jazz band for weddings, corporate events, and private parties. Transparent pricing. Fast quote.",
+  title: "Chicago Blues Assembly | The perfect band",
+  description: "Hire a custom blues band for weddings, corporate events, and private parties. Transparent pricing. Fast quote.",
   icons: {
-    icon: '/cjaFav.svg',
+    icon: '/cbaFav.svg',
   }
 };
 
@@ -27,17 +27,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.chicagojazzassembly.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.chicagobluesassembly.com";
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Chicago Jazz Assembly",
+    name: "Chicago Blues Assembly",
     url: siteUrl,
     areaServed: {
       "@type": "City",
       name: "Chicago",
     },
-    serviceType: "Live jazz music for weddings, corporate events, and private parties",
+    serviceType: "Live blues music for weddings, corporate events, and private parties",
   };
 
   return (

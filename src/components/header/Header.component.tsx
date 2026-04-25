@@ -43,7 +43,7 @@ const Header = () => {
               </Link>
               <Link
                 href='/contact'
-                className={`text-sm cursor-pointer font-bold px-4 py-2 w-max rounded-full transition-all duration-500 bg-slate-900 hover:bg-chi-blue text-white hover:scale-110`}
+                className={`text-sm cursor-pointer font-bold px-4 py-2 w-max rounded-full transition-all duration-500 bg-slate-900  text-white hover:scale-110`}
               >
                 Contact
               </Link>

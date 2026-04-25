@@ -141,7 +141,3 @@ html {
 .animate-scroll {
   animation: scroll 40s linear infinite;
 }
-
-.bg-chi-blue {
-  background: #41B6E6!important;
-}

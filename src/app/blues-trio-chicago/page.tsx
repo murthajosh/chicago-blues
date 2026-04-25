@@ -28,7 +28,7 @@ export default function BluesTrioChicagoPage() {
           usually the sweet spot. It is versatile, musical, and easy to fit in
           most Chicago venues.
         </p>
-        <Link href="/#hero" className="text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-chi-blue text-white hover:scale-110 mx-auto w-max text-center">Book a Blues Trio</Link>
+        <Link href="/#hero" className="text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900  text-white hover:scale-110 mx-auto w-max text-center">Book a Blues Trio</Link>
       </section>
       <section className="bg-slate-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col gap-4 mx-auto w-full max-w-4xl">
         <h2 className="font-bold text-2xl">Why Trios Book So Often</h2>

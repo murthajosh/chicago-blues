@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { number, z } from 'zod'
+import { z } from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { format } from 'date-fns'
@@ -77,21 +77,21 @@ export function BookingForm() {
   const getBandDescription = (size: number) => {
     switch (size) {
       case 1:
-        return "Set bluesy tone with a soloist that enhances your event without overpowering conversation."
+        return "Soloist - Perfect for intimate affairs."
       case 2:
-        return "Create a warm, professional atmosphere with a blues duo that keeps things light but engaging."
+        return "Duo - More engaging, but still subtle."
       case 3:
-        return "Bring on the classic blues energy with a trio that delivers rhythm, groove, and a relaxed sophistication."
+        return "Trio - Classic grooves without overpowering guests. "
       case 4:
-        return "Elevate your event with a quartet that balances energy and polish."
+        return "Quartet - Elevate the energy and get the toes tappin'."
       case 5:
-        return "Up the energy with a quintet that adds depth, drive, and a more dynamic live presence."
+        return "Quintet - Perfect for small dance floors."
       case 6:
-        return "Fill the room with a six-piece band that delivers a rich, confident, and fully realized blues sound."
+        return "Six-piece - When you want to start the party!"
       case 7:
-        return "Make a bold impression with a seven-piece band featuring horns for punch, soul, and excitement."
+        return "Seven-piece - Make a bold impression with more punch and excitement."
       case 7:
-        return "Deliver a show-stopping experience with an eight-piece horn-driven blues band built for maximum impact."
+        return "Eight-piece - Horn-driven blues built for maximum impact."
       default:
         return "Pick the perfect sized band for your event."
     }
@@ -100,7 +100,7 @@ export function BookingForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="max-w-lg space-y-6 mt-4">
-          
+      <h3 className="text-2xl font-bold text-center">Get your quote!</h3>
       <FormField
           control={form.control}
           name="date"
@@ -157,7 +157,7 @@ export function BookingForm() {
         name="hours"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>Performance length</FormLabel>
+            <FormLabel>Performance length (hrs)</FormLabel>
             <FormControl>
               <Input
                 type="number"

@@ -14,7 +14,7 @@ export default function BluesCocktailHourChicagoPage() {
   const faqItems: FaqItem[] = [
     { question: "What blues group size is best for cocktail hour?", answer: "Most cocktail hours choose a trio or quartet depending on guest count, room size, and desired energy level." },
     { question: "How long is a typical cocktail hour blues booking?", answer: "Most bookings run 1-2 hours, often covering guest arrival through reception transition." },
-    { question: "How much does cocktail hour blues cost in Chicago?", answer: "Pricing starts at $200 per performer per hour on-site, plus mileage outside Cook County." },
+    { question: "How much does cocktail hour blues cost in Chicago?", answer: "Pricing comes to $200 per performer per hour on-site." },
   ];
 
   return (
@@ -26,7 +26,7 @@ export default function BluesCocktailHourChicagoPage() {
           Cocktail hour is where the event atmosphere gets established. We build
           blues sets that feel welcoming, stylish, and easy to talk over.
         </p>
-        <Link href="/#hero" className="text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max text-center">Get a Cocktail Hour Quote</Link>
+        <Link href="/#hero" className="text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-chi-blue text-white hover:scale-110 mx-auto w-max text-center">Get a Cocktail Hour Quote</Link>
       </section>
       <section className="bg-slate-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col gap-4 mx-auto w-full max-w-4xl">
         <h2 className="font-bold text-2xl">Common Cocktail Builds</h2>

@@ -1,21 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
-import cbaShort from '../../../public/assets/img/cbaShort.svg'
-import cbaLong from '../../../public/assets/img/cbaLong.svg'
+import cbbLogoCondensed from '../../../public/assets/img/cbbLogoCondensed.svg'
+import cbbLogoLong from '../../../public/assets/img/cbbLogoLong.svg'
 
 const Header = () => {
     return(
         <header className="w-full mx-auto px-4 py-4 flex justify-between items-center gap-4 backdrop-blur-lg sticky top-0 z-50">
             <Link href="/" className="hidden md:block" >
               <Image 
-                src={cbaLong}
+                src={cbbLogoLong}
                 height={40}
                 alt="chicago blues assembly logo"
               />
             </Link>
             <Link href="/" className="md:hidden font-black">
               <Image 
-                src={cbaShort}
+                src={cbbLogoCondensed}
                 height={40}
                 alt="chicago blues assembly logo"
               />
@@ -30,7 +30,6 @@ const Header = () => {
                     <DialogDescription className="flex flex-col gap-4 py-6 text-base">
                       <span className="text-primary font-bold">$200/performer per hour required on-site*.</span>
                       <span className="text-primary">plus</span>
-                      <span className="text-primary font-bold">$2/performer per mile outside Cook County, IL.</span>
                     </DialogDescription>
                     <hr />
                   </DialogHeader>
@@ -44,7 +43,7 @@ const Header = () => {
               </Link>
               <Link
                 href='/contact'
-                className={`text-sm cursor-pointer font-bold px-4 py-2 w-max rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110`}
+                className={`text-sm cursor-pointer font-bold px-4 py-2 w-max rounded-full transition-all duration-500 bg-slate-900 hover:bg-chi-blue text-white hover:scale-110`}
               >
                 Contact
               </Link>

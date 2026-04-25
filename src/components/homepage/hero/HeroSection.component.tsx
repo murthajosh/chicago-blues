@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
       <h1 className="flex flex-col gap-1 font-black text-5xl text-center">
         Hire a Chicago Blues band.
       </h1>
-      <p className='text-lg text-center'>Pick your lineup, tell us about your event, and get a clear quote fast.</p>
+      <p className='text-lg text-center'>Our simple transparent pricing model makes it easy to book the perfect blues band for your vibe and budget.</p>
       <div className="rounded-xl bg-white p-6 min-w-[320] max-w-[480] shadow-lg">
         <BookingForm />
       </div>

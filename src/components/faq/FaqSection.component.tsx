@@ -22,7 +22,7 @@ export const defaultFaqItems: FaqItem[] = [
   },
     {
     question: "How much does a blues band cost in Chicago?",
-    answer: `Our base rate is $200 per performer per hour on-site, plus mileage outside Cook County. Your total depends on lineup size, event length, and travel distance.`,
+    answer: `Our base rate is $200 per performer per hour on-site. Your total depends on lineup size, event length.`,
   },
   {
     question: "Can the band perform other genres?",
@@ -34,7 +34,7 @@ export const defaultFaqItems: FaqItem[] = [
   },
   {
     question: "Does the band take song requests?",
-    answer: `Absolutely. We can accommodate select requests and key songs when shared in advance, especially for weddings and milestone events.`,
+    answer: `Absolutely. We can accommodate select requests and key songs when shared in advance.`,
   },
   {
     question: "Do you provide a sound system?",
@@ -46,7 +46,7 @@ export const defaultFaqItems: FaqItem[] = [
   },
     {
     question: "Do you travel outside of Chicago?",
-    answer: `Yes. We regularly travel beyond city limits. Mileage is billed at $2 per performer per mile outside Cook County.`
+    answer: `Yes. We regularly travel beyond city limits.`
   },
   {
     question: "How does payment work?",

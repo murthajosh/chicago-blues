@@ -21,7 +21,7 @@ export default function ChicagoBluesBandWeddingsPage() {
     {
       question: "How much does a wedding blues band cost in Chicago?",
       answer:
-        "Rates start at $200 per performer per hour on-site, plus mileage outside Cook County.",
+        "Rates come to $200 per performer per hour on-site.",
     },
     {
       question: "Can we customize instruments for our wedding band?",
@@ -84,7 +84,7 @@ export default function ChicagoBluesBandWeddingsPage() {
         </p>
         <Link
           href="/#hero"
-          className="text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max text-center"
+          className="text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-chi-blue text-white hover:scale-110 mx-auto w-max text-center"
         >
           Get Your Wedding Quote
         </Link>
@@ -109,8 +109,7 @@ export default function ChicagoBluesBandWeddingsPage() {
       <section className="bg-slate-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col gap-4 mx-auto w-full max-w-4xl">
         <h2 className="font-bold text-2xl">Wedding Pricing Snapshot</h2>
         <p>
-          Pricing starts at $200 per performer per hour on-site, plus mileage
-          outside Cook County. Most wedding cocktail hour bookings land between
+          Pricing is set at a flat $200 per performer per hour on-site. Most wedding cocktail hour bookings land between
           a trio and quartet setup depending on room size and energy goals.
         </p>
         <Link href="/pricing" className="underline font-bold w-max">

@@ -10,12 +10,11 @@ export default function Pricing() {
             <h1 className="font-bold text-3xl">Our pricing is simple & transparent:</h1>
             <ul className="sm:text-2xl flex flex-col gap-3 font-bold my-3 mx-auto">
                 <li>$200 per performer / hour on-site</li>
-                <li>+$2 per performer / mile outside Cook County</li>
             </ul>
             <p>Simple math, clear expectations, and no surprise add-ons.</p>
         <Link
             href='/'
-            className='text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max text-center'>
+            className='text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-chi-blue text-white hover:scale-110 mx-auto w-max text-center'>
             Get Your Quote Today
         </Link>
         </section>
@@ -24,17 +23,13 @@ export default function Pricing() {
             <h2 className="font-bold text-2xl">How Pricing Works</h2>
 
             <div>
-                <h3 className="font-bold">1. Choose your band.</h3>
-                <p>Pick the lineup that fits your room and energy, from stripped-down duo to full blues ensemble.</p>
+                <h3 className="font-bold">1. Choose your band size</h3>
+                <p>Pick the lineup that fits your room, energy and budget, from stripped-down duo to full blues ensemble.</p>
             </div>
 
             <div>
                 <h3 className="font-bold">2. Choose your time.</h3>
                 <p>We bill the total on-site window you need the band ready and available.</p>
-            </div>
-            <div>
-                <h3 className="font-bold">3. Add travel (if applicable)</h3>
-                <p>Mileage only applies outside Cook County.</p>
             </div>
         </section>
 
@@ -42,33 +37,30 @@ export default function Pricing() {
             <h2 className="font-bold text-2xl">Real Pricing Examples</h2>
 
             <div className="border-l-2 border-amber-700 ps-3">
-                <h3 className="font-bold">Example 1: Wedding Cocktail Hour</h3>
+                <h3 className="font-bold">Example 1: Networking Cocktail Hour</h3>
                 <ul className="ps-3 py-3">
                     <li>Blues Trio (3 musicians x $200 = $600)</li>
                     <li>2 hours</li>
-                    <li>Inside Cook County</li>
                 </ul>
                 <p className="font-bold">Total: $1,200</p>
             </div>
 
             <div className="border-l-2 border-amber-700 ps-3">
-                <h3 className="font-bold">Example 2: Corporate Fundraiser</h3>
+                <h3 className="font-bold">Example 2: Classic Corporate Gala</h3>
                 <ul className="ps-3 py-3">
                     <li>Blues Quartet (4 musicians x $200 = $800)</li>
                     <li>3 hours</li>
-                    <li>Inside Cook County</li>
                 </ul>
                 <p className="font-bold">Total: $2,400</p>
             </div>
 
             <div className="border-l-2 border-amber-700 ps-3">
-                <h3 className="font-bold">Example 3: Classic Wedding Reception</h3>
+                <h3 className="font-bold">Example 3: Big Company Blowout</h3>
                 <ul className="ps-3 py-3">
                     <li>Blues Quintet (5 musicians x $200 = $1,000)</li>
                     <li>4 hours</li>
-                    <li>20 miles outside Cook County (20 miles x $2 x 5 musicians = $200)</li>
                 </ul>
-                <p className="font-bold">Total: $4,200</p>
+                <p className="font-bold">Total: $4,000</p>
             </div>
         </section>
 
@@ -99,7 +91,7 @@ export default function Pricing() {
             <h2 className="font-bold text-2xl">What &quot;Hours On-Site&quot; means</h2>
 
             <div className="flex flex-col gap-3">
-                <p>Unlike large wedding bands with complex production, blues ensembles are lightweight and flexible.</p>
+                <p>Blues bands are lightweight and flexible.</p>
                 <p>We typically arrive shortly before playing and leave right after - so you’re only paying for the time you actually need music.</p>
                 <p>If you’d like us set up early (for example, before guests arrive or during dinner transitions), we simply include that time in the hourly total so musicians are compensated fairly.</p>
             </div>
@@ -113,15 +105,15 @@ export default function Pricing() {
                     <h3 className="font-bold">Intimate Duo</h3>
                     <ul className="ps-3 py-3 list-disc">
                         <li>Blues Vocalist + Guitar</li>
-                    <li>Great for rehearsal dinners and private celebrations</li>
+                    <li>Great for smaller dinners and celebrations</li>
                     <li>Warm texture without overpowering conversation</li>
                         <li>Starting as low as $400</li>
                     </ul>
                     <Link
                         href='/'
-                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max`}
+                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-chi-blue text-white hover:scale-110 mx-auto w-max`}
                     >
-                        Build this band
+                        Book it now!
                     </Link>
                 </div>
                 <div className="bg-white p-3 rounded">
@@ -134,24 +126,24 @@ export default function Pricing() {
                     </ul>
                     <Link
                         href='/'
-                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max`}
+                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-chi-blue text-white hover:scale-110 mx-auto w-max`}
                     >
-                        Build this band
+                        Book it now!
                     </Link>
                 </div>
                 <div className="bg-white p-3 rounded">
                     <h3 className="font-bold">Electric Blues Quartet</h3>
                     <ul className="ps-3 py-3 list-disc">
                         <li>Electric Guitar + Keys + Bass + Drums</li>
-                        <li>Fuller sound with a roots-forward feel</li>
+                        <li>Fuller sound with an energetic feel</li>
                         <li>Great when you want music to lead the room</li>
                         <li>Starting as low as $800</li>
                     </ul>
                     <Link
                         href='/'
-                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max`}
+                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-chi-blue text-white hover:scale-110 mx-auto w-max`}
                     >
-                        Build this band
+                        Book it now!
                     </Link>
                 </div>
                 <div className="bg-white p-3 rounded">
@@ -164,9 +156,9 @@ export default function Pricing() {
                     </ul>
                     <Link
                         href='/'
-                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max`}
+                        className={`text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-chi-blue text-white hover:scale-110 mx-auto w-max`}
                     >
-                        Build this band
+                        Book it now!
                     </Link>
                 </div>
             </div>

@@ -18,10 +18,9 @@ export default function BluesBandCostChicagoPage() {
       <section className="flex flex-col gap-6 text-center mx-auto w-full max-w-4xl">
         <h1 className="font-bold text-3xl">How Much Does a Blues Band Cost in Chicago?</h1>
         <p>
-          The three biggest pricing drivers are lineup size, hours on-site, and
-          mileage. Here is the quick breakdown so you can estimate confidently.
+          The two main pricing drivers are lineup size and hours on-site.
         </p>
-        <Link href="/#hero" className="text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-amber-700 text-white hover:scale-110 mx-auto w-max text-center">Get an Exact Quote</Link>
+        <Link href="/#hero" className="text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900 hover:bg-chi-blue text-white hover:scale-110 mx-auto w-max text-center">Get an Exact Quote</Link>
       </section>
       <section className="bg-slate-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col gap-6 mx-auto w-full max-w-4xl">
         <h2 className="font-bold text-2xl">Trio vs Quartet vs Quintet Pricing</h2>

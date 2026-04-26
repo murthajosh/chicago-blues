@@ -1,53 +1,39 @@
 
 import Link from "next/link";
 import FaqSection from "@/components/faq/FaqSection.component";
-
+import { BookingForm } from '@/components/booking-form/BookingForm.component';
 
 export default function Pricing() {
   return (
       <main className="p-5 flex flex-col gap-12 scroll-smooth">
-        <section className="flex flex-col gap-6 text-center mx-auto w-full max-w-4xl">
-            <h1 className="font-bold text-3xl">Our pricing is simple & transparent:</h1>
-            <ul className="sm:text-2xl flex flex-col gap-3 font-bold my-3 mx-auto">
-                <li>$200 per performer / hour on-site</li>
-            </ul>
-            <p>Simple math, clear expectations, and no surprise add-ons.</p>
-        <Link
-            href='/'
-            className='text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-slate-900  text-white hover:scale-110 mx-auto w-max text-center'>
-            Get Your Quote Today
-        </Link>
-        </section>
+        <section id="hero" className={`flex flex-col md:grid md:grid-cols-2 gap-6 justify-center items-center mx-auto w-full bg-blue-400/5 rounded-xl p-6`}>
+            <div className="flex flex-col gap-6">
+                <h1 className="flex flex-col gap-1 font-black text-5xl text-center">
+                    Our pricing is simple.
+                </h1>
+                <h2 className='text-xl text-center'>$200 per musician per hour, that's it.</h2>
 
-        <section className="bg-slate-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col justify-start gap-8 mx-auto w-full max-w-4xl">
-            <h2 className="font-bold text-2xl">How Pricing Works</h2>
-
-            <div>
-                <h3 className="font-bold">1. Choose your band size</h3>
-                <p>Pick the lineup that fits your room, energy and budget, from stripped-down duo to full blues ensemble.</p>
             </div>
-
-            <div>
-                <h3 className="font-bold">2. Choose your time.</h3>
-                <p>We bill the total on-site window you need the band ready and available.</p>
+            <div className="rounded-xl bg-white p-6 shadow-lg min-w-[324]">
+                <BookingForm />
             </div>
         </section>
 
-        <section className="bg-slate-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col justify-start gap-8 mx-auto w-full max-w-4xl">
+        <section className="rounded-xl p-6 flex flex-col justify-start gap-8 mx-auto w-full max-w-4xl">
             <h2 className="font-bold text-2xl">Real Pricing Examples</h2>
 
-            <div className="border-l-2 border-red-500 ps-3">
-                <h3 className="font-bold">Example 1: Networking Cocktail Hour</h3>
-                <ul className="ps-3 py-3">
+            <div className="flex flex-col gap-3">
+                <h3 className="font-bold text-xl text-blue-400">Example 1</h3>
+                <ul className="">
                     <li>Blues Trio (3 musicians x $200 = $600)</li>
                     <li>2 hours</li>
                 </ul>
                 <p className="font-bold">Total: $1,200</p>
             </div>
 
-            <div className="border-l-2 border-red-500 ps-3">
-                <h3 className="font-bold">Example 2: Classic Corporate Gala</h3>
-                <ul className="ps-3 py-3">
+            <div className="flex flex-col gap-3">
+                <h3 className="font-bold text-xl text-blue-400">Example 2</h3>
+                <ul className="">
                     <li>Blues Quartet (4 musicians x $200 = $800)</li>
                     <li>3 hours</li>
                 </ul>
@@ -55,7 +41,7 @@ export default function Pricing() {
             </div>
 
             <div className="border-l-2 border-red-500 ps-3">
-                <h3 className="font-bold">Example 3: Big Company Blowout</h3>
+            <h3 className="font-bold text-xl text-blue-400">Example 3</h3>
                 <ul className="ps-3 py-3">
                     <li>Blues Quintet (5 musicians x $200 = $1,000)</li>
                     <li>4 hours</li>
@@ -64,7 +50,7 @@ export default function Pricing() {
             </div>
         </section>
 
-        <section className="bg-slate-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col justify-start gap-8 mx-auto w-full max-w-4xl">
+        <section className="bg-blue-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col justify-start gap-8 mx-auto w-full max-w-4xl">
             <h2 className="font-bold text-2xl">What&apos;s Included</h2>
 
             <div className="border-l-2 border-green-400 ps-3">

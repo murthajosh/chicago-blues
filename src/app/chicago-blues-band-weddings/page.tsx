@@ -92,15 +92,15 @@ export default function ChicagoBluesBandWeddingsPage() {
 
       <section className="bg-slate-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col gap-6 mx-auto w-full max-w-4xl">
         <h2 className="font-bold text-2xl">Wedding Lineups Couples Choose Most</h2>
-        <div className="border-l-2 border-amber-700 ps-3">
+        <div className="border-l-2 border-red-500 ps-3">
           <h3 className="font-bold">Ceremony and Cocktail Trio</h3>
           <p>Guitar + Bass + Drums</p>
         </div>
-        <div className="border-l-2 border-amber-700 ps-3">
+        <div className="border-l-2 border-red-500 ps-3">
           <h3 className="font-bold">Dinner-Ready Soul Quartet</h3>
           <p>Vocal + Guitar + Bass + Drums</p>
         </div>
-        <div className="border-l-2 border-amber-700 ps-3">
+        <div className="border-l-2 border-red-500 ps-3">
           <h3 className="font-bold">Reception Blues Quintet</h3>
           <p>Harmonica + Guitar + Keys + Bass + Drums</p>
         </div>

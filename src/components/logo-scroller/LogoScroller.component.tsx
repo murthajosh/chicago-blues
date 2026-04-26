@@ -3,13 +3,11 @@
 import Image from "next/image"
 
 const logos = [
-  "/assets/img/bridgeportartscenter.webp",
-  "/assets/img/citywinery.webp",
-  "/assets/img/fieldmuseum.webp",
-  "/assets/img/hotelzachary.webp",
-  "/assets/img/offshorerooftop.webp",
-  "/assets/img/riverroast.webp",
-  "/assets/img/rockwellontheriver.webp",
+  "/assets/img/bluesfest.webp",
+  "/assets/img/hob.webp",
+  "/assets/img/kingstonmines.webp",
+  "/assets/img/legends.webp",
+  "/assets/img/untitled.webp",
 ]
 
 export default function LogoScroller() {
@@ -31,7 +29,7 @@ export default function LogoScroller() {
                 alt="logo"
                 width={120}
                 height={60}
-                className="object-contain grayscale"
+                className="object-contain"
               />
             </div>
           ))}

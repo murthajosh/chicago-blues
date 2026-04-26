@@ -24,9 +24,9 @@ export default function BluesBandCostChicagoPage() {
       </section>
       <section className="bg-slate-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col gap-6 mx-auto w-full max-w-4xl">
         <h2 className="font-bold text-2xl">Trio vs Quartet vs Quintet Pricing</h2>
-        <div className="border-l-2 border-amber-700 ps-3"><h3 className="font-bold">Blues Trio</h3><p>3 musicians x $200 per hour = $600 per hour on-site.</p></div>
-        <div className="border-l-2 border-amber-700 ps-3"><h3 className="font-bold">Blues Quartet</h3><p>4 musicians x $200 per hour = $800 per hour on-site.</p></div>
-        <div className="border-l-2 border-amber-700 ps-3"><h3 className="font-bold">Blues Quintet</h3><p>5 musicians x $200 per hour = $1,000 per hour on-site.</p></div>
+        <div className="border-l-2 border-red-500 ps-3"><h3 className="font-bold">Blues Trio</h3><p>3 musicians x $200 per hour = $600 per hour on-site.</p></div>
+        <div className="border-l-2 border-red-500 ps-3"><h3 className="font-bold">Blues Quartet</h3><p>4 musicians x $200 per hour = $800 per hour on-site.</p></div>
+        <div className="border-l-2 border-red-500 ps-3"><h3 className="font-bold">Blues Quintet</h3><p>5 musicians x $200 per hour = $1,000 per hour on-site.</p></div>
       </section>
       <section className="bg-slate-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col gap-4 mx-auto w-full max-w-4xl">
         <h2 className="font-bold text-2xl">What Changes the Total</h2>

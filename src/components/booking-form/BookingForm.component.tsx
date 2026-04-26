@@ -107,17 +107,18 @@ export function BookingForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="max-w-lg space-y-6 mt-4">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 mt-4">
       <h3 className="text-2xl font-bold text-center">Get your quote!</h3>
+
       <FormField
           control={form.control}
           name="date"
           render={({ field }) => (
-            <FormItem className="flex-1">
-              <FormLabel>Event Date</FormLabel>
+            <FormItem>
+              <FormLabel className="font-bold">Event Date</FormLabel>
               <Popover>
                 <PopoverTrigger asChild>
-                  <Button variant="outline" className="justify-between font-normal w-full shadow-none p-6 rounded-lg cursor-pointer">
+                  <Button variant="outline" className="justify-between font-normal shadow-none py-4 rounded-lg cursor-pointer">
                     {field.value ? format(field.value, "PPP") : "Select date"}
                     <ChevronDownIcon />
                   </Button>
@@ -141,7 +142,7 @@ export function BookingForm() {
         name="bandSize"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>Band size</FormLabel>
+            <FormLabel className="font-bold">Band size</FormLabel>
             <FormControl>
             <InputGroup>
               <InputGroupInput
@@ -149,7 +150,7 @@ export function BookingForm() {
                 min="1"
                 max="8"
                 placeholder='Number of musicians...'
-                className="py-6 shadow-none rounded-lg"
+                className="shadow-none rounded-lg"
                 value={field.value}
                 onChange={(e) => field.onChange(Number(e.target.value))}
               />
@@ -163,7 +164,7 @@ export function BookingForm() {
         )}
       />
 
-      <p className='w-100'>{getBandDescription(bandSize)}</p>
+      <p className="text-sm">{getBandDescription(bandSize)}</p>
 
 
       <FormField
@@ -171,7 +172,7 @@ export function BookingForm() {
         name="hours"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>Performance length</FormLabel>
+            <FormLabel className="font-bold">Performance length</FormLabel>
             <FormControl>
             <InputGroup>
               <InputGroupInput
@@ -192,33 +193,32 @@ export function BookingForm() {
           </FormItem>
         )}
       />
-      
+            
+      <FormField
+        control={form.control}
+        name="email"
+        render={({ field }) => (
+          <FormItem>
+            <FormLabel className="font-bold">Your email</FormLabel>
+            <FormControl>
+              <Input type="email" placeholder="you@example.com" className='py-6 shadow-none rounded-lg' {...field} />
+            </FormControl>
+            <FormMessage />
+          </FormItem>
+        )}
+      />
 
-          
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Your email</FormLabel>
-              <FormControl>
-                <Input type="email" placeholder="you@example.com" className='py-6 shadow-none rounded-lg' {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+      <Button
+        type="submit"
+        disabled={form.formState.isSubmitting}
+        className="font-bold cursor-pointer text-white flex-1 rounded-full w-full text-md p-6"
+      >
+        ${estimatedQuote.toLocaleString()} • Send My Quote!
+      </Button>
 
-        <Button
-          type="submit"
-          disabled={form.formState.isSubmitting}
-          className="font-bold cursor-pointer text-white flex-1 rounded-full w-full text-lg p-8"
-        >
-          ${estimatedQuote.toLocaleString()} • Send My Quote!
-        </Button>
-        {status && <p className="text-sm text-muted-foreground">{status}</p>}
+      {status && <p className="text-sm text-muted-foreground">{status}</p>}
+
       </form>
-
     </Form>
   )
 }

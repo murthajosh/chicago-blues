@@ -36,7 +36,7 @@ export default function Pricing() {
         <section className="bg-slate-400/5 backdrop-blur-md rounded-xl p-6 flex flex-col justify-start gap-8 mx-auto w-full max-w-4xl">
             <h2 className="font-bold text-2xl">Real Pricing Examples</h2>
 
-            <div className="border-l-2 border-amber-700 ps-3">
+            <div className="border-l-2 border-red-500 ps-3">
                 <h3 className="font-bold">Example 1: Networking Cocktail Hour</h3>
                 <ul className="ps-3 py-3">
                     <li>Blues Trio (3 musicians x $200 = $600)</li>
@@ -45,7 +45,7 @@ export default function Pricing() {
                 <p className="font-bold">Total: $1,200</p>
             </div>
 
-            <div className="border-l-2 border-amber-700 ps-3">
+            <div className="border-l-2 border-red-500 ps-3">
                 <h3 className="font-bold">Example 2: Classic Corporate Gala</h3>
                 <ul className="ps-3 py-3">
                     <li>Blues Quartet (4 musicians x $200 = $800)</li>
@@ -54,7 +54,7 @@ export default function Pricing() {
                 <p className="font-bold">Total: $2,400</p>
             </div>
 
-            <div className="border-l-2 border-amber-700 ps-3">
+            <div className="border-l-2 border-red-500 ps-3">
                 <h3 className="font-bold">Example 3: Big Company Blowout</h3>
                 <ul className="ps-3 py-3">
                     <li>Blues Quintet (5 musicians x $200 = $1,000)</li>

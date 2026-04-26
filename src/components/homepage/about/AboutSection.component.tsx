@@ -12,28 +12,28 @@ interface AboutRow {
 }
 
 const aboutRows: AboutRow[] = [  {
-    heading: 'Corporate events',
-    body: "From networking mixers to office holiday galas, we shape the set around your event. Expect polished players, quick communication, and music that sets the perfect mood.",
+    heading: 'Cocktail Hours & Dinners',
+    body: "From client dinners to holiday cocktail parties, we deliver polished live Blues music that creates an upscale atmosphere without overpowering conversation",
     imgUrl: '/assets/img/singer.webp',
   },
   {
-    heading: 'Weddings',
-    body: "Your wedding music should feel personal, not generic. We build custom blues-forward ensembles for ceremonies, cocktail hour, dinner, and dance sets with smooth transitions all night.",
+    heading: 'Networking Events & Mixers',
+    body: "Keep guests engaged and the room energized with professional live Blues music tailored for receptions, mixers, and corporate social events.",
     imgUrl: '/assets/img/trumpeter.webp',
   },
   {
-    heading: 'Private parties',
-    body: "Birthday, anniversary, house concert, or backyard blowout, we match the energy you want. Keep it low-key and intimate or turn it up with a full rhythm section.",
+    heading: 'Conventions & Retreats',
+    body: "Whether you're celebrating a product launch, a business milestone, or your annual Summer blowout, we match the energy you want. Keep it low-key and intimate or turn it up with a full horn band!",
     imgUrl: '/assets/img/saxophonist.webp',
   }
 ];
 
-const AboutSection: React.FC<Props> = ({ title = 'The authentic soundtrack for your event in Chicago!' }) => {
+const AboutSection: React.FC<Props> = ({ title = 'Sweet home, Chicago.' }) => {
   return (
     <section id="caseStudies" className="flex flex-col gap-16 w-full max-w-4xl mx-auto">
       <div className="sm: text-center sm:max-w-lg sm:mx-auto">
-        <h2 className="text-2xl font-black">{title}</h2>
-        <p className="">Whatever the occasion, </p>
+        <h2 className="text-3xl font-black mb-2">{title}</h2>
+        <p className="">Whether you're based in the Windy City or just gathering here, your company's event deserves a sonic backdrop that's as real and vibrant as the city itself!</p>
       </div>
 
       <div className="flex flex-col gap-16 w-full">
@@ -43,7 +43,7 @@ const AboutSection: React.FC<Props> = ({ title = 'The authentic soundtrack for y
             className={`${styles.aboutRow} grid grid-cols-1 gap-6 items-center sm:grid-cols-2`}
           >
             <div
-              className={`text flex flex-col justify-center border-l-2 border-amber-700 ps-3 ${
+              className={`text flex flex-col justify-center border-l-2 border-red-500 ps-3 ${
                 i % 2 === 1 ? "sm:order-2" : ""
               }`}
             >

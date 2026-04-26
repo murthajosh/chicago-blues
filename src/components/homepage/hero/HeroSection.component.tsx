@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
       <h1 className="flex flex-col gap-1 font-black text-5xl text-center">
         Hire a Chicago Blues band.
       </h1>
-      <h2 className='text-lg text-center'>Book the perfect Chicago Blues Band for your vibe and budget.</h2>
+      <h2 className='text-2xl text-center'>The authentic soundtrack for your company's Chicago event!</h2>
       <div className="rounded-xl bg-white p-6 min-w-[320] max-w-[480] shadow-lg">
         <BookingForm />
       </div>

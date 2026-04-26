@@ -8,13 +8,10 @@ export async function POST(req: Request) {
   const body = await req.json()
 
   const {
+    bandSize,
+    hours,
     email,
-    message,
-    instruments,
     date,
-    startTime,
-    endTime,
-    location,
   } = body
 
   if (!email) {
@@ -23,24 +20,20 @@ export async function POST(req: Request) {
 
   try {
     await resend.emails.send({
-      from: 'CJA <onboarding@resend.dev>',
+      from: 'CBB <onboarding@resend.dev>',
       to: ['murthajosh@gmail.com'],
-      subject: 'CJA',
+      subject: 'CBB',
       html: `
-        <h2>New message from CJA</h2>
+        <h2>New message from CBB</h2>
 
-        <p><strong>Email:</strong> ${email}</p>
-
-        <p><strong>Instruments:</strong> ${instruments?.join(', ')}</p>
+        <p><strong>Email:</strong>${email}</p>
 
         <p><strong>Date:</strong> ${date}</p>
 
-        <p><strong>Time:</strong> ${startTime} – ${endTime}</p>
+        <p><strong>Band size:</strong>${bandSize}</p>
 
-        <p><strong>Location:</strong> ${location}</p>
+        <p><strong>Hours:</strong>${hours}</p>
 
-        <p><strong>Message:</strong></p>
-        <p>${message || '—'}</p>
       `,
     })
 

@@ -23,6 +23,15 @@ import {
 } from "@/components/ui/popover"
 
 import { Input } from '@/components/ui/input'
+
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupInput,
+  InputGroupText,
+  InputGroupTextarea,
+} from "@/components/ui/input-group"
+
 import { Button } from '@/components/ui/button'
 import { ChevronDownIcon } from "lucide-react"
 
@@ -30,7 +39,6 @@ const bookingSchema = z.object({
   bandSize: z.number().int().min(1, 'Select at least one instrument'),
   hours: z.number().int().min(1, 'Select at least one instrument'),
   date: z.date({message: 'Please choose a date for your event'}),
-  location: z.string().min(5, { message: 'Please enter an event location' }),
   email: z.string().email({ message: 'Invalid email address' }),
 })
 
@@ -81,9 +89,9 @@ export function BookingForm() {
       case 2:
         return "Duo - More engaging, but still subtle."
       case 3:
-        return "Trio - Classic grooves without overpowering guests. "
+        return "Trio - Grooving but not overpowering. "
       case 4:
-        return "Quartet - Elevate the energy and get the toes tappin'."
+        return "Quartet - More evergetic and dynamic."
       case 5:
         return "Quintet - Perfect for small dance floors."
       case 6:
@@ -135,14 +143,20 @@ export function BookingForm() {
           <FormItem>
             <FormLabel>Band size</FormLabel>
             <FormControl>
-              <Input
+            <InputGroup>
+              <InputGroupInput
                 type="number"
                 min="1"
                 max="8"
+                placeholder='Number of musicians...'
                 className="py-6 shadow-none rounded-lg"
                 value={field.value}
                 onChange={(e) => field.onChange(Number(e.target.value))}
               />
+              <InputGroupAddon align="inline-end">
+                <InputGroupText>Musician{bandSize > 1 && `s`}</InputGroupText>
+              </InputGroupAddon>
+            </InputGroup>
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -157,9 +171,10 @@ export function BookingForm() {
         name="hours"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>Performance length (hrs)</FormLabel>
+            <FormLabel>Performance length</FormLabel>
             <FormControl>
-              <Input
+            <InputGroup>
+              <InputGroupInput
                 type="number"
                 min="1"
                 max="8"
@@ -167,6 +182,11 @@ export function BookingForm() {
                 value={field.value}
                 onChange={(e) => field.onChange(Number(e.target.value))}
               />
+              <InputGroupAddon align="inline-end">
+                <InputGroupText>Hour{hours > 1 && `s`}</InputGroupText>
+              </InputGroupAddon>
+            </InputGroup>
+
             </FormControl>
             <FormMessage />
           </FormItem>

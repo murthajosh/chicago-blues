@@ -28,12 +28,12 @@ const aboutRows: AboutRow[] = [  {
   }
 ];
 
-const AboutSection: React.FC<Props> = ({ title = 'Chicago events, built your way.' }) => {
+const AboutSection: React.FC<Props> = ({ title = 'The authentic soundtrack for your event in Chicago!' }) => {
   return (
     <section id="caseStudies" className="flex flex-col gap-16 w-full max-w-4xl mx-auto">
-      <div className="sm: text-center sm:max-w-md sm:mx-auto">
+      <div className="sm: text-center sm:max-w-lg sm:mx-auto">
         <h2 className="text-2xl font-black">{title}</h2>
-        <p className="">No package traps and no mystery pricing. Choose your instrumentation, share your timeline, and get a fast quote from working Chicago musicians who know how to read a room.</p>
+        <p className="">Whatever the occasion, </p>
       </div>
 
       <div className="flex flex-col gap-16 w-full">

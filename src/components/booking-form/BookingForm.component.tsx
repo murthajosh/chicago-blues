@@ -164,7 +164,7 @@ export function BookingForm() {
         )}
       />
 
-      <p className="text-sm">{getBandDescription(bandSize)}</p>
+      {/* <p className="text-sm">{getBandDescription(bandSize)}</p> */}
 
 
       <FormField

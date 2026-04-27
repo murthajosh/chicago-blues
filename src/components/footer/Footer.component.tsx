@@ -1,17 +1,6 @@
 import Link from "next/link";
 
 const footerLinks = [
-  { href: "/chicago-blues-band-weddings", label: "Weddings" },
-  { href: "/chicago-blues-band-corporate-events", label: "Corporate Events" },
-  { href: "/blues-soloist-chicago", label: "Blues Soloist" },
-  { href: "/blues-duo-chicago", label: "Blues Duo" },
-  { href: "/blues-trio-chicago", label: "Blues Trio" },
-  { href: "/blues-quartet-chicago", label: "Blues Quartet" },
-  { href: "/blues-cocktail-hour-chicago", label: "Cocktail Hour Blues" },
-  {
-    href: "/how-much-does-a-blues-band-cost-in-chicago",
-    label: "Chicago Blues Pricing Guide",
-  },
   { href: "/contact", label: "Contact" },
 ];
 

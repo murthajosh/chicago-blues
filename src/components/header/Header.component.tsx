@@ -10,14 +10,14 @@ const Header = () => {
               <Image 
                 src={cbbLogoLong}
                 height={40}
-                alt="chicago blues assembly logo"
+                alt="chicago blues bands logo"
               />
             </Link>
             <Link href="/" className="md:hidden font-black">
               <Image 
                 src={cbbLogoCondensed}
                 height={40}
-                alt="chicago blues assembly logo"
+                alt="chicago blues bands logo"
               />
             </Link>
             <div className="flex gap-8 items-center">
@@ -43,7 +43,7 @@ const Header = () => {
               </Link>
               <Link
                 href='/contact'
-                className={`text-sm cursor-pointer font-bold px-4 py-2 w-max rounded-full transition-all duration-500 bg-slate-900  text-white hover:scale-110`}
+                className={`text-sm cursor-pointer font-bold px-4 py-2 w-max rounded-full transition-all duration-500 border-1 border-slate-900  text-slate-900 hover:scale-110`}
               >
                 Contact
               </Link>

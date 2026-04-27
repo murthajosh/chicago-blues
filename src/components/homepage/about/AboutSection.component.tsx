@@ -28,9 +28,9 @@ const aboutRows: AboutRow[] = [  {
   }
 ];
 
-const AboutSection: React.FC<Props> = ({ title = 'Sweet home, Chicago.' }) => {
+const AboutSection: React.FC<Props> = ({ title = 'Sweet Home, Chicago.' }) => {
   return (
-    <section id="caseStudies" className="flex flex-col gap-16 w-full max-w-4xl mx-auto">
+    <section className="flex flex-col gap-16 w-full max-w-4xl mx-auto">
       <div className="sm: text-center sm:max-w-lg sm:mx-auto">
         <h2 className="text-3xl font-black mb-2">{title}</h2>
         <p className="">Whether you're based in the Windy City or just gathering here, your company's event deserves a sonic backdrop that's as real and vibrant as the city itself!</p>

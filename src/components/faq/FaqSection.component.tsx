@@ -22,7 +22,7 @@ export const defaultFaqItems: FaqItem[] = [
   },
     {
     question: "How much does a blues band cost in Chicago?",
-    answer: `Our base rate is $200 per performer per hour on-site. Your total depends on lineup size, event length.`,
+    answer: `Our base rate is $200 per performer per hour. Your total depends on lineup size, event length.`,
   },
   {
     question: "Can the band perform other genres?",
@@ -60,14 +60,14 @@ const FaqSection: React.FC<Props> = ({
 }) => {
   return (
     <section id='faq' className='mx-auto w-full max-w-4xl flex flex-col gap-3'>
-      <h2 className="text-2xl font-black">{title}</h2>
+      <h2 className="text-3xl font-black">{title}</h2>
 
       <Accordion type="single" collapsible className='flex flex-col gap-2'>
         {items.map((item, index) => (
           <AccordionItem
             key={index}
             value={`item-${index + 1}`}
-            className='bg-slate-400/5 backdrop-blur-md rounded-xl px-6 py-2 w-full border-0'
+            className='bg-blue-400/5 backdrop-blur-md rounded-xl px-6 py-2 w-full border-0'
           >
             <AccordionTrigger className='cursor-pointer'>
               {item.question}

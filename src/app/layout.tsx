@@ -15,7 +15,7 @@ const figtree = Figtree({
 })
 
 export const metadata: Metadata = {
-  title: "ChicagoBluesBands | The perfect band",
+  title: "ChicagoBluesBands | Get a quote today!",
   description: "Hire a custom blues band for your corporate event. Transparent pricing. Fast quote.",
   icons: {
     icon: '/cbbLogoMark.svg',

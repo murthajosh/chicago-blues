@@ -61,18 +61,18 @@ export default function Pricing() {
             <div className="flex flex-col gap-3">
                 <h3 className="font-bold text-xl">Included with every booking</h3>
                 <ul className="flex flex-col gap-3">
-                    <li className="flex gap-1 items-center"><CheckCircle className="text-green-500" size={16}/> Professional Chicago blues musicians who look great and sound even better.</li>
-                    <li className="flex gap-1 items-center"><CheckCircle className="text-green-500" size={16}/>Total flexibility to customize the band.</li>
-                    <li className="flex gap-1 items-center"><CheckCircle className="text-green-500" size={16}/>Free PA system available for announcements and speeches.</li>
+                    <li className="flex gap-1 items-center"><CheckCircle className="text-green-500" size={16}/>Pro Chicago Blues musicians who look and sound great</li>
+                    <li className="flex gap-1 items-center"><CheckCircle className="text-green-500" size={16}/>An authentic soundtrack to your event</li>
+                    <li className="flex gap-1 items-center"><CheckCircle className="text-green-500" size={16}/>Fast communication and flexibility</li>
                 </ul>
             </div>
 
             <div className="flex flex-col gap-3">
                 <h3 className="font-bold text-xl">You DON&apos;T need to worry about:</h3>
                 <ul className="flex flex-col gap-3">
-                    <li className="flex gap-1 items-center"><XIcon className="text-red-500" size={16}/>Hidden production fees</li>
-                    <li className="flex gap-1 items-center"><XIcon className="text-red-500" size={16}/>Feeding the band (we do not require band meals in our contracts.)</li>
-                    <li className="flex gap-1 items-center"><XIcon className="text-red-500" size={16}/>Validating parking (we cover this expense for our performers when needed.)</li>
+                    <li className="flex gap-1 items-center"><XIcon className="text-red-500" size={16}/>Hidden fees</li>
+                    <li className="flex gap-1 items-center"><XIcon className="text-red-500" size={16}/>Feeding the band</li>
+                    <li className="flex gap-1 items-center"><XIcon className="text-red-500" size={16}/>Validating parking</li>
                 </ul>
             </div>
         </section>

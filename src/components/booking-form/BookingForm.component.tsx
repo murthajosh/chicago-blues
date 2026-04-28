@@ -29,7 +29,6 @@ import {
   InputGroupAddon,
   InputGroupInput,
   InputGroupText,
-  InputGroupTextarea,
 } from "@/components/ui/input-group"
 
 import { Button } from '@/components/ui/button'
@@ -82,28 +81,28 @@ export function BookingForm() {
     }
   }
 
-  const getBandDescription = (size: number) => {
-    switch (size) {
-      case 1:
-        return "Soloist - Perfect for intimate affairs."
-      case 2:
-        return "Duo - More engaging, but still subtle."
-      case 3:
-        return "Trio - Grooving but not overpowering. "
-      case 4:
-        return "Quartet - More evergetic and dynamic."
-      case 5:
-        return "Quintet - Perfect for small dance floors."
-      case 6:
-        return "Six-piece - When you want to start the party!"
-      case 7:
-        return "Seven-piece - Make a bold impression with more punch and excitement."
-      case 7:
-        return "Eight-piece - Horn-driven blues built for maximum impact."
-      default:
-        return "Pick the perfect sized band for your event."
-    }
-  }
+  // const getBandDescription = (size: number) => {
+  //   switch (size) {
+  //     case 1:
+  //       return "Soloist - Perfect for intimate affairs."
+  //     case 2:
+  //       return "Duo - More engaging, but still subtle."
+  //     case 3:
+  //       return "Trio - Grooving but not overpowering. "
+  //     case 4:
+  //       return "Quartet - More evergetic and dynamic."
+  //     case 5:
+  //       return "Quintet - Perfect for small dance floors."
+  //     case 6:
+  //       return "Six-piece - When you want to start the party!"
+  //     case 7:
+  //       return "Seven-piece - Make a bold impression with more punch and excitement."
+  //     case 7:
+  //       return "Eight-piece - Horn-driven blues built for maximum impact."
+  //     default:
+  //       return "Pick the perfect sized band for your event."
+  //   }
+  // }
 
   return (
     <Form {...form}>

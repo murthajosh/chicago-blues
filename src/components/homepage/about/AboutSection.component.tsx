@@ -33,7 +33,7 @@ const AboutSection: React.FC<Props> = ({ title = 'Sweet Home, Chicago.' }) => {
     <section className="flex flex-col gap-16 w-full max-w-4xl p-6 mx-auto">
       <div className="flex flex-col gap-3 items-center text-center max-w-xl mx-auto">
         <h2 className="text-3xl font-black mb-2">{title}</h2>
-        <p className="">Whether you're based in the Windy City or just gathering here, your company's event deserves a sonic backdrop that's as real and vibrant as the city itself!</p>
+        <p className="">Whether you&apos;re based in the Windy City or just gathering here, your company&apos;s event deserves a sonic backdrop as real and vibrant as the city itself!</p>
         <p className="font-bold">Listen to an audio sample</p>
         <audio controls src="/BluesSampler.mp3">
           Your browser does not support the audio element.

@@ -13,7 +13,7 @@ export default function Pricing() {
                 <h1 className="flex flex-col gap-1 font-black text-5xl text-center">
                     Our pricing is simple.
                 </h1>
-                <h2 className='text-xl text-center'>$200 per musician per hour, that's it.</h2>
+                <h2 className='text-xl text-center'>$200 per musician per hour, that&apos;s it.</h2>
 
             </div>
             <div className="rounded-xl bg-white p-6 shadow-lg min-w-[324]">
@@ -35,7 +35,7 @@ export default function Pricing() {
                 </div>
 
                 <div className="flex flex-col gap-3">
-                    <h3 className="font-bold text-xl text-">Rockin' Blues Quartet</h3>
+                    <h3 className="font-bold text-xl text-">Rockin&apos; Blues Quartet</h3>
                     <ul className="">
                         <li>(4 musicians x $200 = $800)</li>
                         <li>x 3 hours</li>

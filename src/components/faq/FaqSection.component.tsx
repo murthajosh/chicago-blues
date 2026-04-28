@@ -59,7 +59,7 @@ const FaqSection: React.FC<Props> = ({
   items = defaultFaqItems,
 }) => {
   return (
-    <section id='faq' className='mx-auto w-full max-w-4xl flex flex-col gap-3'>
+    <section id='faq' className='p-6 mx-auto w-full max-w-4xl flex flex-col gap-3'>
       <h2 className="text-3xl font-black">{title}</h2>
 
       <Accordion type="single" collapsible className='flex flex-col gap-2'>

@@ -12,6 +12,7 @@ export async function POST(req: Request) {
     hours,
     email,
     date,
+    message,
   } = body
 
   if (!email) {
@@ -33,6 +34,8 @@ export async function POST(req: Request) {
         <p><strong>Band size:</strong>${bandSize}</p>
 
         <p><strong>Hours:</strong>${hours}</p>
+
+        <p><strong>Message:</strong>${message}</p>
 
       `,
     })

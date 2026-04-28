@@ -15,7 +15,7 @@ export default function LogoScroller() {
 
   return (
 
-    <section id="caseStudies" className="flex flex-col gap-16 w-full max-w-4xl mx-auto">
+    <section className="p-6 flex flex-col gap-16 w-full max-w-4xl mx-auto">
       <div className="">
         <h2 className="text-3xl font-black">Catch us around town!</h2>
         <p className="">You may have already seen our musicians playing at some of Chicago&apos;s finest Blues venues!</p>

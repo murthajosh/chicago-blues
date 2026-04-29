@@ -87,7 +87,6 @@ export default function Pricing() {
                     <ul className="space-y-2">
                         <li>Blues Vocalist + Guitar</li>
                         <li>Great for smaller dinners and formal settings</li>
-                        <li>Starting as low as $400</li>
                     </ul>
                     <Link
                         href='/'
@@ -101,7 +100,6 @@ export default function Pricing() {
                     <ul className="space-y-2">
                         <li>Guitar + Bass + Drums</li>
                         <li>Ideal for cocktail hours and networking receptions</li>
-                        <li>Starting as low as $600</li>
                     </ul>
                     <Link
                         href='/'
@@ -115,7 +113,6 @@ export default function Pricing() {
                     <ul className="space-y-2">
                         <li>Electric Guitar + Keys + Bass + Drums</li>
                         <li>Great when you want music to lead the room</li>
-                        <li>Starting as low as $800</li>
                     </ul>
                     <Link
                         href='/'
@@ -129,7 +126,6 @@ export default function Pricing() {
                     <ul className="space-y-2">
                         <li>Vocal + Guitar + Keys + Bass + Drums</li>
                         <li>Best for high-energy receptions and parties</li>
-                        <li>Starting as low as $1000</li>
                     </ul>
                     <Link
                         href='/'

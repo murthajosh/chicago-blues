@@ -50,8 +50,8 @@ export function BookingForm() {
     resolver: zodResolver(bookingSchema),
     shouldUnregister: false, 
     defaultValues: {
-      bandSize: 3,
-      hours: 3,
+      bandSize: 1,
+      hours: 1,
       date: undefined,
       email: '',
     },
@@ -60,7 +60,7 @@ export function BookingForm() {
   const bandSize = form.watch('bandSize')
   const hours = form.watch('hours')
 
-  const estimatedQuote = bandSize * 200 * hours
+  const estimatedQuote = bandSize * 250 * hours
 
   async function onSubmit(values: BookingFormValues) {
     setStatus('Sending...')
@@ -108,7 +108,6 @@ export function BookingForm() {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 mt-4">
       <h3 className="text-2xl font-bold text-center">Get your quote!</h3>
-
       <FormField
           control={form.control}
           name="date"
@@ -211,8 +210,7 @@ export function BookingForm() {
         type="submit"
         disabled={form.formState.isSubmitting}
         className="font-bold cursor-pointer text-white flex-1 rounded-full w-full text-md p-6"
-      >
-        ${estimatedQuote.toLocaleString()} • Send My Quote!
+      >${estimatedQuote > 1000 ? estimatedQuote.toLocaleString(): `1,000` } • Send My Quote!
       </Button>
 
       {status && <p className="text-sm text-muted-foreground">{status}</p>}

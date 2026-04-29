@@ -1,55 +1,96 @@
+ "use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import cbbLogoCondensed from '../../../public/assets/img/cbbLogoCondensed.svg'
-import cbbLogoLong from '../../../public/assets/img/cbbLogoLong.svg'
+import cbbLogoCondensed from "../../../public/assets/img/cbbLogoCondensed.svg";
+import cbbLogoLong from "../../../public/assets/img/cbbLogoLong.svg";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const Header = () => {
-    return(
-        <header className="w-full mx-auto px-4 py-4 flex justify-between items-center gap-4 backdrop-blur-lg sticky top-0 z-50">
-            <Link href="/" className="hidden md:block" >
-              <Image 
-                src={cbbLogoLong}
-                height={40}
-                alt="chicago blues bands logo"
-              />
-            </Link>
-            <Link href="/" className="md:hidden font-black">
-              <Image 
-                src={cbbLogoCondensed}
-                height={40}
-                alt="chicago blues bands logo"
-              />
-            </Link>
-            <div className="flex gap-8 items-center">
-              {/* <ThemeToggle /> */}
-              {/* <Dialog>
-                <DialogTrigger className="font-black cursor-pointer">Pricing</DialogTrigger>
-                <DialogContent className="sm:max-w-md w-full">
-                  <DialogHeader>
-                    <DialogTitle className="font-black text-2xl">Our pricing is simple and transparent.</DialogTitle>
-                    <DialogDescription className="flex flex-col gap-4 py-6 text-base">
-                      <span className="text-primary font-bold">$200/performer per hour required on-site*.</span>
-                      <span className="text-primary">plus</span>
-                    </DialogDescription>
-                    <hr />
-                  </DialogHeader>
-                    <DialogFooter>
-                      <span className="text-sm">* 'Hours-on-site' explained: Unlike larger party bands with elaborate sound and lighting systems, blues bands travel light. We can swoop in just before the event and vanish in a flash when the event is over, so we don’t build in any setup or tear down time into our pricing. But sometimes clients need us in place early so we can be out of the way during meals, speeches, or other event activities. In these special cases, to compensate performers fairly for their time, we bill based on the total time a client needs us set up and ready.</span>
-                    </DialogFooter>
-                </DialogContent>
-              </Dialog> */}
-              <Link href='/pricing' className="font-bold hover:underline">
-              Pricing
-              </Link>
-              <Link
-                href='/contact'
-                className={`text-sm cursor-pointer font-bold px-4 py-2 w-max rounded-full transition-all duration-500 border-1 border-slate-900  text-slate-900 hover:scale-110`}
-              >
-                Contact
-              </Link>
-            </div>
-        </header>
-    )
-}
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  return (
+    <header className="w-full mx-auto px-4 py-4 sticky top-0 z-50 backdrop-blur-lg">
+      <div className="flex justify-between items-center gap-4">
+        <Link href="/" className="hidden md:block">
+          <Image src={cbbLogoLong} height={40} alt="chicago blues bands logo" />
+        </Link>
+        <Link href="/" className="md:hidden font-black" onClick={closeMobileMenu}>
+          <Image src={cbbLogoCondensed} height={40} alt="chicago blues bands logo" />
+        </Link>
+
+        <div className="hidden md:flex gap-8 items-center">
+          <Link href="/pricing" className="font-bold hover:underline">
+            Pricing
+          </Link>
+          <Link
+            href="/contact"
+            className="text-sm cursor-pointer font-bold px-4 py-2 w-max rounded-full transition-all duration-500 border-1 border-slate-900 text-slate-900 hover:scale-110"
+          >
+            Contact
+          </Link>
+        </div>
+
+        <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+          <SheetTrigger asChild>
+            <button
+              type="button"
+              className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-500"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-navigation"
+            >
+              <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                {isMobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M18 6L6 18" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </SheetTrigger>
+
+          <SheetContent side="right" className="md:hidden w-72 bg-white">
+            <SheetHeader>
+              <SheetTitle>Menu</SheetTitle>
+              <SheetDescription>Browse site sections.</SheetDescription>
+            </SheetHeader>
+
+            <nav id="mobile-navigation" className="mt-8">
+              <div className="flex flex-col items-center gap-8 pt-2">
+                <SheetClose asChild>
+                  <Link href="/pricing" className="font-bold hover:underline">
+                    Pricing
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link
+                    href="/contact"
+                    className="text-sm cursor-pointer font-bold px-4 py-2 w-max rounded-full transition-all duration-500 border-1 border-slate-900 text-slate-900 hover:scale-110"
+                  >
+                    Contact
+                  </Link>
+                </SheetClose>
+              </div>
+            </nav>
+          </SheetContent>
+        </Sheet>
+      </div>
+    </header>
+  );
+};
 
 export default Header;

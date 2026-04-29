@@ -13,8 +13,7 @@ export default function Pricing() {
                 <h1 className="flex flex-col gap-1 font-black text-5xl text-center">
                     Our pricing is simple.
                 </h1>
-                <h2 className='text-xl text-center'>$200 per musician per hour, that&apos;s it.</h2>
-
+                <h2 className='text-xl text-center'>$250 per musician per hour, with a $1,000 minimum booking.</h2>
             </div>
             <div className="rounded-xl bg-white p-6 shadow-lg min-w-[324]">
                 <BookingForm />
@@ -28,28 +27,28 @@ export default function Pricing() {
                 <div className="border-2 rounded-xl w-full p-3 flex flex-col gap-3">
                     <h3 className="font-bold text-xl text-">Classic Blues Trio</h3>
                     <ul className="">
-                        <li>(3 musicians x $200 = $600)</li>
+                        <li>(3 musicians x $250 = $750)</li>
                         <li>x 2 hours</li>
                     </ul>
-                    <p className="font-bold">Total: $1,200</p>
+                    <p className="font-bold">Total: $1,500</p>
                 </div>
 
                 <div className="border-2 rounded-xl w-full p-3 flex flex-col gap-3">
                     <h3 className="font-bold text-xl text-">Rockin&apos; Blues Quartet</h3>
                     <ul className="">
-                        <li>(4 musicians x $200 = $800)</li>
+                        <li>(4 musicians x $250 = $1,000)</li>
                         <li>x 3 hours</li>
                     </ul>
-                    <p className="font-bold">Total: $2,400</p>
+                    <p className="font-bold">Total: $3,000</p>
                 </div>
 
                 <div className="border-2 rounded-xl w-full p-3 flex flex-col gap-3">
                     <h3 className="font-bold text-xl text-">5-Piece Blues Band</h3>
                     <ul className="">
-                        <li>(5 musicians x $200 = $1,000)</li>
+                        <li>(5 musicians x $250 = $1,250)</li>
                         <li>x 4 hours</li>
                     </ul>
-                    <p className="font-bold">Total: $4,000</p>
+                    <p className="font-bold">Total: $5,000</p>
                 </div>
             </div>
 

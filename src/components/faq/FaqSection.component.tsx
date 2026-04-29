@@ -22,7 +22,7 @@ export const defaultFaqItems: FaqItem[] = [
   },
     {
     question: "How much does a blues band cost in Chicago?",
-    answer: `Our base rate is $200 per performer per hour. Your total depends on lineup size, event length.`,
+    answer: `Our base rate is $250 per performer per hour. Your total depends on lineup size, event length.`,
   },
   {
     question: "Can the band perform other genres?",

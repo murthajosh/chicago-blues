@@ -12,7 +12,7 @@ interface AboutRow {
 }
 
 const aboutRows: AboutRow[] = [  {
-    heading: 'Cocktail Hours & Dinners',
+    heading: 'Galas & Dinners',
     body: "From client dinners to holiday cocktail parties, we deliver polished live Blues music that creates an upscale atmosphere without overpowering conversation",
     imgUrl: '/assets/img/bassist.webp',
   },
@@ -23,6 +23,11 @@ const aboutRows: AboutRow[] = [  {
   },
   {
     heading: 'Conventions & Retreats',
+    body: "Getting the gang together? Make it a gathering to remember! Nothing brings people together like authentic live Blues music!",
+    imgUrl: '/assets/img/harmonica.webp',
+  },
+  {
+    heading: 'Parties & Celebrations',
     body: "Whether you're celebrating a product launch, a business milestone, or your annual Summer blowout, we match the energy you want. Keep it low-key and intimate or turn it up with a full horn band!",
     imgUrl: '/assets/img/horns.webp',
   }

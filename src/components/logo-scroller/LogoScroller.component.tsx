@@ -27,7 +27,7 @@ export default function LogoScroller() {
               <Image
                 src={src}
                 alt="logo"
-                width={120}
+                width={180}
                 height={60}
                 className="object-contain"
               />

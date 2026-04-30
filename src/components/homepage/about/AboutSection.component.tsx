@@ -14,21 +14,21 @@ interface AboutRow {
 const aboutRows: AboutRow[] = [  {
     heading: 'Cocktail Hours & Dinners',
     body: "From client dinners to holiday cocktail parties, we deliver polished live Blues music that creates an upscale atmosphere without overpowering conversation",
-    imgUrl: '/assets/img/singer.webp',
+    imgUrl: '/assets/img/bassist.webp',
   },
   {
     heading: 'Networking Events & Mixers',
     body: "Keep guests engaged and the room energized with professional live Blues music tailored for receptions, mixers, and corporate social events.",
-    imgUrl: '/assets/img/trumpeter.webp',
+    imgUrl: '/assets/img/guitarist.webp',
   },
   {
     heading: 'Conventions & Retreats',
     body: "Whether you're celebrating a product launch, a business milestone, or your annual Summer blowout, we match the energy you want. Keep it low-key and intimate or turn it up with a full horn band!",
-    imgUrl: '/assets/img/saxophonist.webp',
+    imgUrl: '/assets/img/horns.webp',
   }
 ];
 
-const AboutSection: React.FC<Props> = ({ title = 'Sweet Home, Chicago.' }) => {
+const AboutSection: React.FC<Props> = ({ title = 'We do Blues, Chicago style.' }) => {
   return (
     <section className="flex flex-col gap-16 w-full max-w-4xl p-6 mx-auto">
       <div className="flex flex-col gap-3 items-center text-center max-w-xl mx-auto">

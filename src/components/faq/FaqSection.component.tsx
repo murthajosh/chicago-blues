@@ -34,7 +34,7 @@ export const defaultFaqItems: FaqItem[] = [
   },
   {
     question: "Does the band take song requests?",
-    answer: `Absolutely. We can accommodate select requests and key songs when shared in advance.`,
+    answer: `We can accommodate select requests within reason and when shared in advance, but we are not able to tailor entire setlists beyond our standard classic Chicago Blues repertoire.`,
   },
   {
     question: "Do you provide a sound system?",

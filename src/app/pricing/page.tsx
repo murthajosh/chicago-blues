@@ -7,7 +7,7 @@ import { CheckCircle, XIcon } from 'lucide-react';
 export default function Pricing() {
   return (
       <main className="p-5 flex flex-col gap-12 scroll-smooth">
-        <section id="hero" className={`flex flex-col md:grid md:grid-cols-2 gap-6 justify-center items-center mx-auto w-full bg-blue-400/5 rounded-xl p-6 max-w-4xl`}>
+        <section id="hero" className={`flex flex-col md:grid md:grid-cols-2 gap-6 justify-center items-center mx-auto w-full rounded-xl p-6 max-w-4xl`}>
             <div className="flex flex-col gap-6 text-center md:text-left">
                 <h1 className="flex flex-col gap-1 font-black text-5xl">
                     Our pricing is simple.

@@ -13,7 +13,7 @@ interface AboutRow {
 
 const aboutRows: AboutRow[] = [  {
     heading: 'Galas & Dinners',
-    body: "From client dinners to holiday cocktail parties, we deliver polished live Blues music that creates an upscale atmosphere without overpowering conversation",
+    body: "From client dinners to holiday cocktail parties, we deliver polished live Blues music that creates an upscale atmosphere without overpowering conversation.",
     imgUrl: '/assets/img/bassist.webp',
   },
   {
@@ -23,7 +23,7 @@ const aboutRows: AboutRow[] = [  {
   },
   {
     heading: 'Conventions & Retreats',
-    body: "Getting the gang together? Make it a gathering to remember! Nothing brings people together like authentic live Blues music!",
+    body: "Getting the gang together? Make it a gathering to remember. Nothing brings people together like authentic live Blues music!",
     imgUrl: '/assets/img/harmonica.webp',
   },
   {

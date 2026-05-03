@@ -33,6 +33,9 @@ const Header = () => {
         </Link>
 
         <div className="hidden md:flex gap-8 items-center">
+          <Link href="/band-sizing-guide" className="font-bold hover:underline">
+            Band sizing guide
+          </Link>
           <Link href="/pricing" className="font-bold hover:underline">
             Pricing
           </Link>
@@ -74,6 +77,11 @@ const Header = () => {
                 <SheetClose asChild>
                   <Link href="/pricing" className="font-bold hover:underline">
                     Pricing
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link href="/band-sizing-guide" className="font-bold hover:underline">
+                    Band sizing guide
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>

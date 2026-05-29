@@ -39,10 +39,10 @@ const AboutSection: React.FC<Props> = ({ title = 'We do Blues, Chicago style.' }
       <div className="flex flex-col gap-3 items-center text-center max-w-xl mx-auto">
         <h2 className="text-3xl font-black mb-2">{title}</h2>
         <p className="">Whether you&apos;re based in the Windy City or just gathering here, your company&apos;s event deserves a sonic backdrop as real and vibrant as the city itself!</p>
-        <p className="font-bold">Listen to an audio sample</p>
+        {/* <p className="font-bold">Listen to an audio sample</p>
         <audio controls src="/BluesSampler.mp3">
           Your browser does not support the audio element.
-        </audio>
+        </audio> */}
       </div>
 
       <div className="flex flex-col gap-16 w-full">
@@ -52,7 +52,7 @@ const AboutSection: React.FC<Props> = ({ title = 'We do Blues, Chicago style.' }
             className={`${styles.aboutRow} grid grid-cols-1 gap-6 items-center sm:grid-cols-2`}
           >
             <div
-              className={`text flex flex-col justify-center border-l-2 border-red-500 ps-3 ${
+              className={`text flex flex-col justify-center ${
                 i % 2 === 1 ? "sm:order-2" : ""
               }`}
             >
@@ -61,13 +61,14 @@ const AboutSection: React.FC<Props> = ({ title = 'We do Blues, Chicago style.' }
             </div>
 
             <div className={`flex justify-center ${i % 2 === 1 ? "sm:order-1" : ""}`}>
-              <Image
+              {/* <Image
                 src={row.imgUrl}
                 alt=""
                 width={600}
                 height={400}
                 className="w-75 rounded-xl h-auto max-w-full object-cover"
-              />
+              /> */}
+              <p>****</p>
             </div>
           </div>
         ))}

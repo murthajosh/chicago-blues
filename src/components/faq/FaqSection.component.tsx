@@ -22,7 +22,7 @@ export const defaultFaqItems: FaqItem[] = [
   },
     {
     question: "How much does a blues band cost in Chicago?",
-    answer: `Our base rate is $250 per performer per hour. Your total depends on lineup size, event length.`,
+    answer: `Rates vary based on many factors. When you book with ChicagoBluesBands.com, your total depends on lineup size and event length. Get a fast quote today!`,
   },
   {
     question: "Can the band perform other genres?",

@@ -107,7 +107,7 @@ export function BookingForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 mt-4">
-      <h3 className="text-2xl font-bold text-center">Get your quote!</h3>
+      <h3 className="text-2xl font-bold text-center">Get your quote - it&apos;s fast and easy!</h3>
       <FormField
           control={form.control}
           name="date"
@@ -209,8 +209,10 @@ export function BookingForm() {
       <Button
         type="submit"
         disabled={form.formState.isSubmitting}
-        className="font-bold cursor-pointer text-white flex-1 rounded-full w-full text-md p-6"
-      >${estimatedQuote > 1000 ? estimatedQuote.toLocaleString(): `1,000` } • Send My Quote!
+        className="font-bold cursor-pointer text-white flex-1 rounded-full w-full text-md p-6 bg-blue-500 hover:bg-blue-400 active:bg-blue-600"
+      >
+        {/* ${estimatedQuote > 1000 ? estimatedQuote.toLocaleString(): `1,000` }  */}
+        Send my quote!
       </Button>
 
       {status && <p className="text-sm text-muted-foreground">{status}</p>}

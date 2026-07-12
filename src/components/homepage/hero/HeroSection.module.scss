@@ -1,8 +1,8 @@
-// .hero {
-//     background-image: 
-//     linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1),), 
-//     url(../../../../public/assets/img/marinaTowers.webp);
-//     background-size: cover;
-//     background-position: top center;
-//     background-repeat: no-repeat;
-// }
+.hero {
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .9),), 
+    url('../../../../public/assets/img/epiguitar.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}

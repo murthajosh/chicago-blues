@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from '../about/AboutSection.module.scss';
+import logoMark from '../../../../public/assets/img/cbbLogoMark.svg'
 
 interface Props {
   title?: string;
@@ -37,6 +38,18 @@ const AboutSection: React.FC<Props> = ({ title = 'We do Blues, Chicago style.' }
   return (
     <section className="flex flex-col gap-16 w-full max-w-4xl p-6 mx-auto">
       <div className="flex flex-col gap-3 items-center text-center max-w-xl mx-auto">
+        <div className="flex gap-3 align-center">
+          {[...Array(4)].map((_, i) => (
+            <Image
+              key={i}
+              src={logoMark}
+              alt=""
+              width={48}
+              height={48}
+              className=""
+            />
+          ))}
+        </div>
         <h2 className="text-3xl font-black mb-2">{title}</h2>
         <p className="">Whether you&apos;re based in the Windy City or just gathering here, your company&apos;s event deserves a sonic backdrop as real and vibrant as the city itself!</p>
         {/* <p className="font-bold">Listen to an audio sample</p>
@@ -49,10 +62,10 @@ const AboutSection: React.FC<Props> = ({ title = 'We do Blues, Chicago style.' }
         {aboutRows.map((row, i) => (
           <div
             key={i}
-            className={`${styles.aboutRow} grid grid-cols-1 gap-6 items-center sm:grid-cols-2`}
+            className={`${styles.aboutRow} grid grid-cols-1 gap-6 items-center sm:grid-cols-2 border border-1 border-blue-100 rounded-xl p-6`}
           >
             <div
-              className={`text flex flex-col justify-center ${
+              className={`text flex flex-col justify-center gap-4 ${
                 i % 2 === 1 ? "sm:order-2" : ""
               }`}
             >
@@ -61,14 +74,14 @@ const AboutSection: React.FC<Props> = ({ title = 'We do Blues, Chicago style.' }
             </div>
 
             <div className={`flex justify-center ${i % 2 === 1 ? "sm:order-1" : ""}`}>
-              {/* <Image
+              <Image
                 src={row.imgUrl}
                 alt=""
                 width={600}
                 height={400}
-                className="w-75 rounded-xl h-auto max-w-full object-cover"
-              /> */}
-              <p>****</p>
+                className="w-75 rounded-full h-auto max-w-full object-cover"
+              />
+              {/* <p>****</p> */}
             </div>
           </div>
         ))}

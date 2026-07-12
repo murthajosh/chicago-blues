@@ -36,9 +36,6 @@ const Header = () => {
           <Link href="/band-sizing-guide" className="font-bold hover:underline">
             Band sizing guide
           </Link>
-          <Link href="/pricing" className="font-bold hover:underline">
-            Pricing
-          </Link>
           <Link
             href="/contact"
             className="text-sm cursor-pointer font-bold px-4 py-2 w-max rounded-full transition-all duration-500 border-1 border-slate-900 text-slate-900 hover:scale-110"
@@ -68,17 +65,12 @@ const Header = () => {
 
           <SheetContent side="right" className="md:hidden w-72 bg-white">
             <SheetHeader>
-              <SheetTitle>Menu</SheetTitle>
-              <SheetDescription>Browse site sections.</SheetDescription>
+              <SheetTitle>ChicagoBluesBands</SheetTitle>
+              <SheetDescription>We do Blues, Chicago style.</SheetDescription>
             </SheetHeader>
 
             <nav id="mobile-navigation" className="mt-8">
               <div className="flex flex-col items-center gap-8 pt-2">
-                <SheetClose asChild>
-                  <Link href="/pricing" className="font-bold hover:underline">
-                    Pricing
-                  </Link>
-                </SheetClose>
                 <SheetClose asChild>
                   <Link href="/band-sizing-guide" className="font-bold hover:underline">
                     Band sizing guide

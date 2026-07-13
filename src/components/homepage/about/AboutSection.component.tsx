@@ -36,7 +36,7 @@ const aboutRows: AboutRow[] = [  {
 
 const AboutSection: React.FC<Props> = ({ title = 'We do Blues, Chicago style.' }) => {
   return (
-    <section className="flex flex-col gap-16 w-full max-w-4xl p-6 mx-auto">
+    <section className="flex flex-col gap-16 w-full mx-auto max-w-6xl">
       <div className="flex flex-col gap-3 items-center text-center max-w-xl mx-auto">
         <div className="flex gap-3 align-center">
           {[...Array(4)].map((_, i) => (
@@ -62,14 +62,14 @@ const AboutSection: React.FC<Props> = ({ title = 'We do Blues, Chicago style.' }
         {aboutRows.map((row, i) => (
           <div
             key={i}
-            className={`${styles.aboutRow} grid grid-cols-1 gap-6 items-center sm:grid-cols-2 border border-1 border-blue-100 rounded-xl p-6`}
+            className={`${styles.aboutRow} text-center sm:text-left grid grid-cols-1 gap-6 items-center sm:grid-cols-2 border border-1 border-blue-100 rounded-xl p-6`}
           >
             <div
-              className={`text flex flex-col justify-center gap-4 ${
+              className={`flex flex-col justify-center gap-4 ${
                 i % 2 === 1 ? "sm:order-2" : ""
               }`}
             >
-              <h3 className="text-xl font-black w-full">{row.heading}</h3>
+              <h3 className="text-2xl font-black w-full">{row.heading}</h3>
               <p>{row.body}</p>
             </div>
 

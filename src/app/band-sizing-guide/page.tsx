@@ -39,7 +39,7 @@ interface SizingSection {
 export default function BandSizingGuide() {
   return (
       <main className="p-5 flex flex-col gap-6 scroll-smooth">
-        <section id="hero" className={`flex flex-col gap-6 justify-center items-center mx-auto w-full rounded-xl p-6 text-center max-w-4xl`}>
+        <section id="hero" className={`flex flex-col gap-6 justify-center items-center mx-auto w-full rounded-xl p-6 text-center max-w-6xl`}>
             <h1 className="flex flex-col gap-1 font-black text-5xl">
                 Blues Band Sizing Guide
             </h1>
@@ -47,7 +47,7 @@ export default function BandSizingGuide() {
         </section>
 
         {bandSizingSections.map((section, i) => (
-            <section key={i} className="rounded-xl p-6 flex flex-col justify-start gap-2 mx-auto w-full max-w-4xl">
+            <section key={i} className="rounded-xl p-6 flex flex-col justify-start gap-2 mx-auto w-full max-w-6xl">
                 <h2 className="font-bold text-3xl">{section.heading}</h2>
                 <p>{section.body}</p>
             </section>

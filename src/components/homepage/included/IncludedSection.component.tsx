@@ -2,7 +2,7 @@ import { CheckCircle, XIcon } from 'lucide-react';
 
 const IncludedSection: React.FC = () => {
   return (
-    <section className="rounded-xl p-6 flex flex-col justify-start gap-8 mx-auto w-full max-w-4xl">
+    <section className="rounded-xl p-6 flex flex-col justify-start gap-8 mx-auto w-full max-w-6xl">
       <h2 className="font-bold text-3xl">What&apos;s included with my booking?</h2>
         <ul className="flex flex-col gap-3">
           <li className="flex gap-2 items-center"><CheckCircle className="text-green-500" size={24}/>An authentic and unforgettable soundtrack to your event</li>

@@ -59,7 +59,7 @@ const FaqSection: React.FC<Props> = ({
   items = defaultFaqItems,
 }) => {
   return (
-    <section id='faq' className='p-6 mx-auto w-full max-w-4xl flex flex-col gap-3'>
+    <section id='faq' className='p-6 mx-auto w-full flex flex-col gap-3 max-w-6xl'>
       <h2 className="text-3xl font-black">{title}</h2>
 
       <Accordion type="single" collapsible className='flex flex-col gap-2'>
@@ -67,7 +67,7 @@ const FaqSection: React.FC<Props> = ({
           <AccordionItem
             key={index}
             value={`item-${index + 1}`}
-            className='bg-blue-400/5 backdrop-blur-md rounded-xl px-6 py-2 w-full border-0'
+            className='w-full border border-1 border-blue-100 rounded-xl p-6'
           >
             <AccordionTrigger className='cursor-pointer'>
               {item.question}

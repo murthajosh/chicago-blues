@@ -30,7 +30,7 @@ export const defaultFaqItems: FaqItem[] = [
   },
   {
     question: "Does the band take breaks?",
-    answer: `Yes. A common format is a first set up to one hour, then 45 minutes on / 15 minutes off. We can also adjust set lengths around speeches, toasts, or program cues.`,
+    answer: `Yes. A common format is a first set up to one hour, then 15 minutes off / 45 minutes on for subsequent hours. We can also adjust set lengths around speeches, toasts, or program cues.`,
   },
   {
     question: "Does the band take song requests?",

@@ -9,7 +9,7 @@ import IncludedSection from "@/components/homepage/included/IncludedSection.comp
 
 export default function Home() {
   return (
-      <main className="p-5 flex flex-col gap-12 scroll-smooth">
+      <main className="p-6 flex flex-col gap-16 scroll-smooth">
         <HeroSection />
         <AboutSection />
         <WhySection />

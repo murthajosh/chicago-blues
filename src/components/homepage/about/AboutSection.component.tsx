@@ -62,7 +62,7 @@ const AboutSection: React.FC<Props> = ({ title = 'We do Blues, Chicago style.' }
         {aboutRows.map((row, i) => (
           <div
             key={i}
-            className={`${styles.aboutRow} text-center sm:text-left grid grid-cols-1 gap-6 items-center sm:grid-cols-2 border border-1 border-blue-100 rounded-xl p-6`}
+            className={`${styles.aboutRow} text-center sm:text-left grid grid-cols-1 gap-6 items-center sm:grid-cols-2 bg-slate-100/50 rounded-xl p-6`}
           >
             <div
               className={`flex flex-col justify-center gap-4 ${

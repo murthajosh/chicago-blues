@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full mx-auto px-4 py-4 sticky top-0 z-50 backdrop-blur-lg max-w-6xl">
+    <header className="w-full mx-auto px-6 py-4 sticky top-0 z-50 backdrop-blur-lg max-w-6xl">
       <div className="flex justify-between items-center gap-4">
         <Link href="/" className="hidden md:block">
           <Image src={cbbLogoLong} height={40} alt="chicago blues bands logo" />

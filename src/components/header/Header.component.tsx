@@ -36,6 +36,9 @@ const Header = () => {
           <Link href="/band-sizing-guide" className="font-bold hover:underline">
             Band sizing guide
           </Link>
+          <Link href="/repertoire" className="font-bold hover:underline">
+            Repertoire
+          </Link>
           <Link
             href="/contact"
             className="text-sm cursor-pointer font-bold px-4 py-2 w-max rounded-full transition-all duration-500 border-1 border-slate-900 text-slate-900 hover:scale-110"
@@ -74,6 +77,11 @@ const Header = () => {
                 <SheetClose asChild>
                   <Link href="/band-sizing-guide" className="font-bold hover:underline">
                     Band sizing guide
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link href="/repertoire" className="font-bold hover:underline">
+                    Repertoire
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>

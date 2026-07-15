@@ -182,23 +182,20 @@ export default function Repertoire() {
         </section>
       ))}
 
-      <section className="rounded-xl p-6 flex flex-col items-center gap-6 mx-auto w-full max-w-6xl text-center">
+      <section className="rounded-xl p-6 flex flex-col items-center gap-6 mx-auto w-full max-w-6xl text-center bg-slate-100/50">
         <h2 className="font-bold text-3xl">Ready to book a Chicago blues band?</h2>
         <p className="text-lg">
           Get a fast quote, explore our pricing, or find the right lineup for your event.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 items-center">
+        <div className="flex flex-col gap-4 items-center">
           <Link
-            href="/contact"
+            href="/"
             className="text-sm cursor-pointer font-bold px-4 py-2 rounded-full transition-all duration-500 bg-blue-500 hover:bg-blue-400 active:bg-blue-600 text-white hover:scale-110 w-max text-center"
           >
             Get a Quote
           </Link>
           <Link href="/band-sizing-guide" className="font-bold hover:underline">
             Band sizing guide
-          </Link>
-          <Link href="/pricing" className="font-bold hover:underline">
-            Pricing
           </Link>
         </div>
       </section>
